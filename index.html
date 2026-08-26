@@ -45,7 +45,6 @@
       padding: 20px;
       border-radius: 15px;
       margin-bottom: 20px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
       text-align: center;
     }
 
@@ -56,7 +55,7 @@
 
     .classes {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
 
@@ -66,7 +65,12 @@
       padding: 25px 10px;
       text-align: center;
       box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-      cursor: pointer;
+    }
+
+    .class-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .class-card h3 {
@@ -80,21 +84,6 @@
       font-size: 14px;
     }
 
-    .features {
-      margin-top: 25px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .feature {
-      background: white;
-      padding: 18px 10px;
-      text-align: center;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-
     footer {
       margin-top: 30px;
       padding: 20px;
@@ -103,85 +92,60 @@
       color: white;
       font-size: 13px;
     }
-
-    @media (max-width: 500px) {
-      .classes,
-      .features {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>📚 Sindh Textbook Web</h1>
-    <p>Sindh Textbook Board Educational Platform</p>
-  </header>
+<header>
+  <h1>📚 Sindh Textbook Web</h1>
+  <p>Sindh Textbook Board Educational Platform</p>
+</header>
 
-  <main class="container">
+<main class="container">
 
-    <section class="welcome">
-      <h2>Welcome Students</h2>
-      <p>
-        Classes 9 to 12 — Books, Subjects, Notes, Questions and Quizzes
-      </p>
-    </section>
+  <section class="welcome">
+    <h2>Welcome Students</h2>
+    <p>Classes 9 to 12 — Books, Subjects, Notes and Quizzes</p>
+  </section>
 
-    <section class="classes">
+  <section class="classes">
 
-      <div class="class-card">
+    <div class="class-card">
+      <a href="https://drive.google.com/drive/folders/1exic8v1XsRdPQW6SvPJieZmiLRoWYN2d" target="_blank">
         <h3>Class 9</h3>
         <p>Books & Subjects</p>
-      </div>
+      </a>
+    </div>
 
-      <div class="class-card">
+    <div class="class-card">
+      <a href="https://drive.google.com/drive/folders/1hqkfpuxvSwMlzd25E22kI2PrrfiWYiyh" target="_blank">
         <h3>Class 10</h3>
         <p>Books & Subjects</p>
-      </div>
+      </a>
+    </div>
 
-      <div class="class-card">
-        <h3>Class 11</h3>
-        <p>First Year</p>
-      </div>
+    <div class="class-card">
+      <a href="https://drive.google.com/drive/folders/1f3HRFRAOxEq5FWUUMqIFBRj_Zk6hE3fY" target="_blank">
+        <h3>First Year</h3>
+        <p>Class 11 — Books & Subjects</p>
+      </a>
+    </div>
 
-      <div class="class-card">
-        <h3>Class 12</h3>
-        <p>Second Year</p>
-      </div>
+    <div class="class-card">
+      <a href="https://drive.google.com/drive/folders/17RImwQ9yBH9WR2_s1AyBA3BoeMWy-X6v" target="_blank">
+        <h3>Second Year</h3>
+        <p>Class 12 — Books & Subjects</p>
+      </a>
+    </div>
 
-    </section>
+  </section>
 
-    <section class="features">
+</main>
 
-      <div class="feature">
-        📖<br>
-        <strong>Books</strong>
-      </div>
-
-      <div class="feature">
-        🔍<br>
-        <strong>Search</strong>
-      </div>
-
-      <div class="feature">
-        📝<br>
-        <strong>Notes</strong>
-      </div>
-
-      <div class="feature">
-        ❓<br>
-        <strong>Quiz</strong>
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-    Sindh Textbook Web © 2026
-  </footer>
+<footer>
+  Sindh Textbook Web © 2026
+</footer>
 
 </body>
 </html>
